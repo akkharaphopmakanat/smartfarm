@@ -47,15 +47,6 @@ class MainController extends Controller
         $fielddata->update($request->all());
         $fielddata->save();
         return $fielddata;
-
-
-
-    //    $model = Model::find($id);
-    //    $model->fill(['email' => 'new@example.com']);
-    //    $changes = $model->getDirty();
-    //    $model->save();
-    //    dd($changes);
-
     }
 
     /**

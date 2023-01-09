@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/controller', [App\Http\Controllers\HomeController::class, 'controller']);
 Route::get('/detail/{plant_id}', [App\Http\Controllers\FieldView::class, 'index'])->name('home');
-Route::get('/history', [App\Http\Controllers\ChartController::class, 'index']);
+Route::get('/history/{duration}', [App\Http\Controllers\ChartController::class, 'index']);
+Route::get('/realtime/{data}', [App\Http\Controllers\RealtimeController::class, 'index']);
 
 
 
